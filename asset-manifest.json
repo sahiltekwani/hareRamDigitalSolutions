@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/hareRamDigitalSolutions/static/css/main.926710d5.css",
+    "main.js": "/hareRamDigitalSolutions/static/js/main.790bb314.js",
+    "static/js/453.20e198ad.chunk.js": "/hareRamDigitalSolutions/static/js/453.20e198ad.chunk.js",
+    "static/media/tech-bg.mp4": "/hareRamDigitalSolutions/static/media/tech-bg.e86494e44fa1f2dab322.mp4",
+    "static/media/logo.png": "/hareRamDigitalSolutions/static/media/logo.58d336a729f7fe560d51.png",
+    "index.html": "/hareRamDigitalSolutions/index.html",
+    "main.926710d5.css.map": "/hareRamDigitalSolutions/static/css/main.926710d5.css.map",
+    "main.790bb314.js.map": "/hareRamDigitalSolutions/static/js/main.790bb314.js.map",
+    "453.20e198ad.chunk.js.map": "/hareRamDigitalSolutions/static/js/453.20e198ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.926710d5.css",
+    "static/js/main.790bb314.js"
+  ]
+}
