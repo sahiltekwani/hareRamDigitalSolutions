@@ -1,0 +1,141 @@
+.services-container {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+  min-height: 100vh;
+}
+
+.services-subtext {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.85;
+}
+
+.services-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* === Service Card Layout === */
+.service-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.service-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  background: #ffffff20;
+}
+
+.service-video {
+  width: 50%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.service-content {
+  width: 50%;
+  padding: 1rem;
+}
+
+.service-content h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #ffa500;
+}
+
+.service-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ddd;
+}
+.service-description {
+  text-align: left;
+  margin: 1rem 0;
+  padding-left: 1.2rem;
+  color: #ddd;
+}
+
+.service-description li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+/* Button container alignment */
+.contact-button-wrapper {
+  display: flex;
+  align-items: center;   /* vertically centers */
+  justify-content: center; /* horizontally centers */
+  padding-left: 2rem;    /* adjust if needed */
+}
+
+/* Contact button style */
+.nav-link {
+  color: blue;
+  background-color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+  white-space: nowrap;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffa500;
+}
+
+
+/* === Responsive for Mobile === */
+@media (max-width: 768px) {
+  .service-card {
+    flex-direction: column;
+    text-align: center;
+      background: #ffffff20;
+
+  }
+
+  .service-card.reverse {
+    flex-direction: column;
+  }
+
+  .service-video,
+  .service-content {
+    width: 100%;
+  }
+
+  .service-video {
+    height: 200px;
+    margin-bottom: 1rem;
+  }
+}
+.cta-container {
+  align-self: flex-end;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.service-contact{
+  height: 100%;
+  align-items: center;
+  text-align: center;
+}
+
