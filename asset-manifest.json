@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/hareramdigitalsolutions/static/css/main.aea616f0.css",
-    "main.js": "/hareramdigitalsolutions/static/js/main.49f2899d.js",
-    "static/js/453.20e198ad.chunk.js": "/hareramdigitalsolutions/static/js/453.20e198ad.chunk.js",
-    "static/media/tech-bg.mp4": "/hareramdigitalsolutions/static/media/tech-bg.e86494e44fa1f2dab322.mp4",
-    "static/media/logo.png": "/hareramdigitalsolutions/static/media/logo.58d336a729f7fe560d51.png",
-    "static/media/delivery.jpg": "/hareramdigitalsolutions/static/media/delivery.444ba6cf20fcc946b90a.jpg",
-    "static/media/meet.jpg": "/hareramdigitalsolutions/static/media/meet.eab87240264a983088ec.jpg",
-    "static/media/maintenance.jpg": "/hareramdigitalsolutions/static/media/maintenance.c433cd26bcaaa718d748.jpg",
-    "static/media/signoff.jpg": "/hareramdigitalsolutions/static/media/signoff.0c28a238008c9123382e.jpg",
-    "static/media/quatation.jpg": "/hareramdigitalsolutions/static/media/quatation.1abf63119dcb7d5aaafb.jpg",
-    "index.html": "/hareramdigitalsolutions/index.html",
-    "main.aea616f0.css.map": "/hareramdigitalsolutions/static/css/main.aea616f0.css.map",
-    "main.49f2899d.js.map": "/hareramdigitalsolutions/static/js/main.49f2899d.js.map",
-    "453.20e198ad.chunk.js.map": "/hareramdigitalsolutions/static/js/453.20e198ad.chunk.js.map"
+    "main.css": "/hareRamDigitalSolutions/static/css/main.aea616f0.css",
+    "main.js": "/hareRamDigitalSolutions/static/js/main.880d28be.js",
+    "static/js/453.20e198ad.chunk.js": "/hareRamDigitalSolutions/static/js/453.20e198ad.chunk.js",
+    "static/media/tech-bg.mp4": "/hareRamDigitalSolutions/static/media/tech-bg.e86494e44fa1f2dab322.mp4",
+    "static/media/logo.png": "/hareRamDigitalSolutions/static/media/logo.58d336a729f7fe560d51.png",
+    "static/media/delivery.jpg": "/hareRamDigitalSolutions/static/media/delivery.444ba6cf20fcc946b90a.jpg",
+    "static/media/meet.jpg": "/hareRamDigitalSolutions/static/media/meet.eab87240264a983088ec.jpg",
+    "static/media/maintenance.jpg": "/hareRamDigitalSolutions/static/media/maintenance.c433cd26bcaaa718d748.jpg",
+    "static/media/signoff.jpg": "/hareRamDigitalSolutions/static/media/signoff.0c28a238008c9123382e.jpg",
+    "static/media/quatation.jpg": "/hareRamDigitalSolutions/static/media/quatation.1abf63119dcb7d5aaafb.jpg",
+    "index.html": "/hareRamDigitalSolutions/index.html",
+    "main.aea616f0.css.map": "/hareRamDigitalSolutions/static/css/main.aea616f0.css.map",
+    "main.880d28be.js.map": "/hareRamDigitalSolutions/static/js/main.880d28be.js.map",
+    "453.20e198ad.chunk.js.map": "/hareRamDigitalSolutions/static/js/453.20e198ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aea616f0.css",
-    "static/js/main.49f2899d.js"
+    "static/js/main.880d28be.js"
   ]
 }
