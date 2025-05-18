@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hareramdigitalsolutions/static/css/main.aea616f0.css",
-    "main.js": "/hareramdigitalsolutions/static/js/main.6e1d8103.js",
+    "main.js": "/hareramdigitalsolutions/static/js/main.49f2899d.js",
     "static/js/453.20e198ad.chunk.js": "/hareramdigitalsolutions/static/js/453.20e198ad.chunk.js",
     "static/media/tech-bg.mp4": "/hareramdigitalsolutions/static/media/tech-bg.e86494e44fa1f2dab322.mp4",
     "static/media/logo.png": "/hareramdigitalsolutions/static/media/logo.58d336a729f7fe560d51.png",
@@ -12,11 +12,11 @@
     "static/media/quatation.jpg": "/hareramdigitalsolutions/static/media/quatation.1abf63119dcb7d5aaafb.jpg",
     "index.html": "/hareramdigitalsolutions/index.html",
     "main.aea616f0.css.map": "/hareramdigitalsolutions/static/css/main.aea616f0.css.map",
-    "main.6e1d8103.js.map": "/hareramdigitalsolutions/static/js/main.6e1d8103.js.map",
+    "main.49f2899d.js.map": "/hareramdigitalsolutions/static/js/main.49f2899d.js.map",
     "453.20e198ad.chunk.js.map": "/hareramdigitalsolutions/static/js/453.20e198ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aea616f0.css",
-    "static/js/main.6e1d8103.js"
+    "static/js/main.49f2899d.js"
   ]
 }
