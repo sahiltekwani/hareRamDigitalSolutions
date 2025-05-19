@@ -92,38 +92,23 @@ const Home = () => {
 
             <div className="highlights">
               {services.map((service, index) => (
-                <motion.div
+                <div
+                  className={`service-card ${index % 2 !== 0 ? "reverse" : ""}`}
                   key={index}
-                  className={`highlight-box div-main ${
-                    index % 2 === 1 ? "reverse" : ""
-                  }`}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.2 }}
                 >
-                  <div
-                    className={`highlight-box div-main ${
-                      index % 2 === 1 ? "reverse" : ""
-                    }`}
-                  >
-                    <div className="video-wrapper">
-                      <LazyVideo className="home-videos" src={service.video} />
-                    </div>
-                    <div className="service-main-right">
-                      <h3>{service.title}</h3>
-                      <ul>
-                        {service.description.map((point, i) => (
-                          <li key={i}>{point}</li>
-                        ))}
-                      </ul>
-                      <div className="cta-container">
-                        <HashLink smooth to="/services" className="nav-link">
-                          Other Services
-                        </HashLink>
-                      </div>{" "}
-                    </div>
+                  <LazyVideo className="service-video" src={service.video} />
+                  <h2>{service.title}</h2>
+                  <ul className="service-description">
+                    {service.description.map((point, i) => (
+                      <li key={i}>{point}</li>
+                    ))}
+                  </ul>
+                  <div className="contact-button-wrapper">
+                    <HashLink smooth to="/services" className="nav-link">
+                      Other Services
+                    </HashLink>
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>

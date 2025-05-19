@@ -98,8 +98,6 @@
   flex-direction: row-reverse;
 }
 
-
-
 .show-all-button {
   padding: 12px 24px;
   background-color: #eeeceb;
@@ -112,6 +110,13 @@
 
 .show-all-button:hover {
   background-color: #e65c00;
+}
+
+.home-main-left,
+.home-main-right {
+  flex: 1;
+  min-width: 300px;
+  box-sizing: border-box;
 }
 
 
@@ -130,7 +135,6 @@
     background: #ffffff20;
 
   }
-
   .video-wrapper,
   .div {
     max-width: 100%;
@@ -149,15 +153,18 @@
   .home-main-right {
     width: 100%;
     padding: 0;
+    flex-direction: column;
+    text-align: left;
+    background: #ffffff20;
+  }
+  .home-main-left h2{
+    align-items: center;
+    text-align: center;
+  }
+  .home-main-left p{
+    padding: 1rem;
   }
 }
-.home-main-left,
-.home-main-right {
-  flex: 1;
-  min-width: 300px;
-  box-sizing: border-box;
-}
-
 
 
 
@@ -216,4 +223,5 @@
   align-self: flex-end;
   margin-top: 1rem;
   padding-top: 1rem;
+  justify-content: center;
 }

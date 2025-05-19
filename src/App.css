@@ -168,13 +168,12 @@ body {
     position: absolute;
     top: 70px;
     right: 0;
-    width: 200px;
-    padding: 1rem;
-    border-radius: 50px;
-    background-color: black;
+    margin-right: 2rem;
+    padding: 0.25rem;
   }
 .header-navigation li{
     margin: 1rem;
+    background-color: black;
 }
 
   .header-navigation.show {
