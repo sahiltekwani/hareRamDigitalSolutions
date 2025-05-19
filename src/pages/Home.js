@@ -5,6 +5,9 @@ import "../App.css";
 import Contact from "./Contact.js";
 import { HashLink } from "react-router-hash-link";
 import LazyVideo from "./LazyVideo.jsx";
+import web from "../media/web.mp4";
+import aiVideo from "../media/ai.mp4";
+
 const services = [
   {
     title: "AI Innovations",
@@ -14,7 +17,7 @@ const services = [
       "Real-time analytics and automation",
       "AI-driven personalization for customer experience",
     ],
-    video: "/videos/ai.mp4",
+    video: aiVideo,
   },
   {
     title: "Web Development",
@@ -24,17 +27,7 @@ const services = [
       "SEO and performance optimization",
       "Integration with modern APIs and services",
     ],
-    video: "/videos/web.mp4",
-  },
-  {
-    title: "Mobile Applications",
-    description: [
-      "Cross-platform mobile apps for iOS and Android with seamless UX.",
-      "Flutter and React Native development",
-      "Push notifications and offline support",
-      "App Store and Play Store deployment",
-    ],
-    video: "/videos/mobile.mp4",
+    video: web,
   },
 ];
 const Home = () => {
@@ -89,7 +82,7 @@ const Home = () => {
         transition={{ duration: 1 }}
       >
         <div className="main">
-          <div className="main-left">
+          <div className="home-main-left">
             <h2>What We Do</h2>
             <p>
               We deliver top-notch digital experiences tailored to your business
@@ -114,7 +107,7 @@ const Home = () => {
                     }`}
                   >
                     <div className="video-wrapper">
-                      <LazyVideo className="lazy-video" src={service.video} />
+                      <LazyVideo className="service-video" src={service.video} />
                     </div>
                     <div className="service-main-right">
                       <h3>{service.title}</h3>
@@ -135,7 +128,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="main-right" id="contact">
+          <div className="home-main-right" id="contact">
             <Contact />
           </div>
         </div>

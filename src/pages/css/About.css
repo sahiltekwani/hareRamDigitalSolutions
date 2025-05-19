@@ -21,15 +21,14 @@
 }
 
 /* Flex layout for What We Do + How We Work */
-.main {
+.about-main {
   display: flex;
-  flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
 }
 
 /* Individual section container */
-.main-right {
+.about-main-right .about-main-left {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
   backdrop-filter: blur(6px);
@@ -141,6 +140,13 @@
     width: 100%;
     height: auto;
   }
+  .about-main-right .about-main-left {
+  width: 100%;
+}
+.about-main{
+  flex-direction: column;
+}
+
 }
 /* Alternating image layout */
 .step.reverse {

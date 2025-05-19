@@ -2,6 +2,10 @@ import React from "react";
 import "./css/Services.css";
 import LazyVideo from "./LazyVideo"; // Adjust path as needed
 import { HashLink } from "react-router-hash-link";
+import aiVideo from "../media/ai.mp4";
+import cloud from "../media/cloud.mp4";
+import mobile from "../media/mobile.mp4";
+import web from "../media/web.mp4";
 
 const services = [
   {
@@ -12,7 +16,7 @@ const services = [
       "Real-time analytics and automation",
       "AI-driven personalization for customer experience",
     ],
-    video: "/videos/ai.mp4",
+    video: aiVideo,
   },
   {
     title: "Web Development",
@@ -22,7 +26,7 @@ const services = [
       "SEO and performance optimization",
       "Integration with modern APIs and services",
     ],
-    video: "/videos/web.mp4",
+    video: web,
   },
   {
     title: "Mobile Applications",
@@ -32,7 +36,7 @@ const services = [
       "Push notifications and offline support",
       "App Store and Play Store deployment",
     ],
-    video: "/videos/mobile.mp4",
+    video: mobile,
   },
   {
     title: "Cloud Integration",
@@ -42,7 +46,7 @@ const services = [
       "CI/CD and DevOps best practices",
       "Secure and scalable infrastructure setup",
     ],
-    video: "/videos/cloud.mp4",
+    video: cloud,
   },
 ];
 

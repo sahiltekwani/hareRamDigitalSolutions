@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
@@ -11,18 +11,14 @@ import { HashLink } from "react-router-hash-link";
 import { useState } from "react";
 
 function App() {
-  const [isMenuVisible, setIsMenuVisible] = useState(true); // State to toggle menu visibility
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
 
-  // const handleLogoClick = () => {
-  //   setIsMenuVisible(!isMenuVisible); // Toggle menu visibility when logo is clicked
-  // };
   const toggleMenu = () => {
     setIsMenuVisible((prev) => !prev);
   };
 
   return (
     <Router>
-      {/* Background Video */}
       <div className="content-overlay">
         <video autoPlay muted loop className="bg-video">
           <source src={bgVideo} type="video/mp4" />
@@ -31,11 +27,11 @@ function App() {
 
         <header className="App-header">
           <div className="header-left">
-            <Link to="/">
+            <NavLink to="/" end>
               <div className="logo-container" onClick={toggleMenu}>
                 <img src={logo} alt="logo" className="logo" />
               </div>
-            </Link>
+            </NavLink>
           </div>
 
           <button className="menu-toggle" onClick={toggleMenu}>
@@ -44,17 +40,35 @@ function App() {
 
           <ul className={`header-navigation ${isMenuVisible ? "show" : ""}`}>
             <li>
-              <Link to="/">Home</Link>
+              <NavLink
+                to="/"
+                end
+                onClick={toggleMenu}
+                className={({ isActive }) => (isActive ? "active-link" : "")}
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <Link to="/services">Services</Link>
+              <NavLink
+                to="/services"
+                onClick={toggleMenu}
+                className={({ isActive }) => (isActive ? "active-link" : "")}
+              >
+                Services
+              </NavLink>
             </li>
             <li>
-              <Link to="/about">About Us</Link>
+              <NavLink
+                to="/about"
+                onClick={toggleMenu}
+                className={({ isActive }) => (isActive ? "active-link" : "")}
+              >
+                About Us
+              </NavLink>
             </li>
-
             <li>
-              <HashLink smooth to="/#contact">
+              <HashLink onClick={toggleMenu} smooth to="/#contact">
                 Contact Us
               </HashLink>
             </li>

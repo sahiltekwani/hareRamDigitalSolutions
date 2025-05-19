@@ -1,13 +1,7 @@
-<<<<<<< HEAD
 import React from "react";
 import { Link } from "react-router-dom";
 import "./css/Footer.css";
 import { HashLink } from "react-router-hash-link";
-=======
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './css/Footer.css';
->>>>>>> c93a374e7a5c611b627ee25067335f90f5a6293f
 
 const Footer = () => {
   return (

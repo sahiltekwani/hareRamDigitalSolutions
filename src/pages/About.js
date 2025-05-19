@@ -35,8 +35,8 @@ const About = () => {
           success.
         </p>
       </section>
-      <div className="main">
-        <div className="main-right">
+      <div className="about-main">
+        <div className="about-main-left">
           <section className="about-section">
             <h2>What We Do</h2>
             <ul>
@@ -97,7 +97,7 @@ const About = () => {
             </ul>
           </section>
         </div>
-        <div className="main-right">
+        <div className="about-main-right">
           <section className="about-section how-we-work-section">
             <h2>How We Work</h2>
             <div className="work-steps">
