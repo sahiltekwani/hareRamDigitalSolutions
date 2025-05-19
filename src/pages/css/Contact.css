@@ -39,7 +39,7 @@
   }
   @media (max-width: 768px) {
   .contact-form-container {
-    margin: 0;
+    margin: 1rem;
     font-size: 2rem;
     text-align: center;
   }

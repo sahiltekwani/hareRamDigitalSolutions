@@ -102,7 +102,9 @@ const About = () => {
             <h2>How We Work</h2>
             <div className="work-steps">
               <div className="step">
-                <img src={meetImg} alt="Discussion with client" />
+                <div>
+                  <img src={meetImg} alt="Discussion with client" />
+                </div>
                 <div className="step-content">
                   <h3>Step 1: Understanding Requirements</h3>
                   <p>
@@ -122,7 +124,9 @@ const About = () => {
               </div>
 
               <div className="step reverse">
-                <img src={proposal} alt="Proposal and quotation" />
+                <div>
+                  <img src={proposal} alt="Proposal and quotation" />
+                </div>
                 <div className="step-content">
                   <h3>Step 2: Proposal & Quotation</h3>
                   <p>
@@ -142,7 +146,9 @@ const About = () => {
               </div>
 
               <div className="step">
-                <img src={signOff} alt="Contract sign-off" />
+                <div>
+                  <img src={signOff} alt="Contract sign-off" />
+                </div>
                 <div className="step-content">
                   <h3>Step 3: Deal Sign-off</h3>
                   <p>
@@ -162,7 +168,9 @@ const About = () => {
               </div>
 
               <div className="step reverse">
-                <img src={delivery} alt="Product delivery" />
+                <div>
+                  <img src={delivery} alt="Product delivery" />
+                </div>
                 <div className="step-content">
                   <h3>Step 4: Product Delivery</h3>
                   <p>

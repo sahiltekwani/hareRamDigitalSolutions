@@ -8,14 +8,45 @@ import logo from "./media/logo.png";
 import "./App.css";
 import bgVideo from "./media/tech-bg.mp4";
 import { HashLink } from "react-router-hash-link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function App() {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
+  const menuRef = useRef(null); // Ref for detecting outside clicks
 
   const toggleMenu = () => {
     setIsMenuVisible((prev) => !prev);
   };
+  const handleNavClick = () => {
+    setIsMenuVisible(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  // Close menu on scroll or outside click
+  useEffect(() => {
+    const handleScroll = () => {
+      if (isMenuVisible) setIsMenuVisible(false);
+    };
+
+    const handleClickOutside = (event) => {
+      if (
+        isMenuVisible &&
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        !event.target.closest(".menu-toggle") // ✅ Ignore clicks on the toggle button
+      ) {
+        setIsMenuVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMenuVisible]);
 
   return (
     <Router>
@@ -28,7 +59,7 @@ function App() {
         <header className="App-header">
           <div className="header-left">
             <NavLink to="/" end>
-              <div className="logo-container" onClick={toggleMenu}>
+              <div className="logo-container" onClick={handleNavClick}>
                 <img src={logo} alt="logo" className="logo" />
               </div>
             </NavLink>
@@ -38,13 +69,18 @@ function App() {
             &#9776;
           </button>
 
-          <ul className={`header-navigation ${isMenuVisible ? "show" : ""}`}>
+          <ul
+            ref={menuRef}
+            className={`header-navigation ${isMenuVisible ? "show" : ""}`}
+          >
             <li>
               <NavLink
                 to="/"
                 end
-                onClick={toggleMenu}
-                className={({ isActive }) => (isActive ? "active-link" : "")}
+                onClick={handleNavClick}
+                className={({ isActive }) =>
+                  isActive ? "active-link" : undefined
+                }
               >
                 Home
               </NavLink>
@@ -52,8 +88,10 @@ function App() {
             <li>
               <NavLink
                 to="/services"
-                onClick={toggleMenu}
-                className={({ isActive }) => (isActive ? "active-link" : "")}
+                onClick={handleNavClick}
+                className={({ isActive }) =>
+                  isActive ? "active-link" : undefined
+                }
               >
                 Services
               </NavLink>
@@ -61,8 +99,10 @@ function App() {
             <li>
               <NavLink
                 to="/about"
-                onClick={toggleMenu}
-                className={({ isActive }) => (isActive ? "active-link" : "")}
+                onClick={handleNavClick}
+                className={({ isActive }) =>
+                  isActive ? "active-link" : undefined
+                }
               >
                 About Us
               </NavLink>

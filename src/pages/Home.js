@@ -57,9 +57,9 @@ const Home = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            Whether you want to start your digital revolution to the most
-            advance AI features. We have got you covered. Reach out to us to
-            start today.
+            From launching your digital presence to integrating cutting-edge AI
+            solutions — we've got you covered. Ready to transform your vision
+            into reality? Reach out to us today.
           </motion.p>
 
           <motion.div
@@ -118,7 +118,7 @@ const Home = () => {
                       </ul>
                       <div className="cta-container">
                         <HashLink smooth to="/services" className="nav-link">
-                          other services
+                          Other Services
                         </HashLink>
                       </div>{" "}
                     </div>

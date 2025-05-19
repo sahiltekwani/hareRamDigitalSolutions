@@ -88,8 +88,7 @@
   flex-direction: row;
   align-items: flex-start;
   gap: 1.5rem;
-  background-color: var(--bg-light);
-  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.05);  padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px var(--shadow-color);
   transition: transform 0.3s ease;
@@ -113,7 +112,6 @@
 
 .step-content p {
   margin: 0;
-  color: var(--text-color);
 }
 
 @media (max-width: 768px) {
@@ -166,5 +164,31 @@
   position: relative;
 }
 
+
+@media (max-width: 768px) {
+  .step {
+    flex-direction: column;
+    padding: 0;
+    transition: none;
+  }
+  .step.reverse{
+  flex-direction: column;
+  }
+  .step img {
+    width: 100%;
+    height: auto;
+  }
+  .step .step.reverse img {
+    width: 100%;
+    height: auto;
+  }
+  .about-main-right .about-main-left {
+  width: 100%;
+}
+.about-main{
+  flex-direction: column;
+}
+
+}
 
 
