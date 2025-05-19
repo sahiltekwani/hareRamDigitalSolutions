@@ -107,7 +107,7 @@ const Home = () => {
                     }`}
                   >
                     <div className="video-wrapper">
-                      <LazyVideo className="service-video" src={service.video} />
+                      <LazyVideo className="home-videos" src={service.video} />
                     </div>
                     <div className="service-main-right">
                       <h3>{service.title}</h3>
