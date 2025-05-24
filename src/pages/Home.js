@@ -31,6 +31,9 @@ const services = [
   },
 ];
 const Home = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div className="home-container">
       {/* Hero Section with Background Video */}
@@ -41,7 +44,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Welcome to Hare Ram Digital Solutions
+            Welcome to Hare Ram InfoTech
           </motion.h1>
 
           <motion.p
@@ -93,20 +96,29 @@ const Home = () => {
             <div className="highlights">
               {services.map((service, index) => (
                 <div
-                  className={`service-card ${index % 2 !== 0 ? "reverse" : ""}`}
+                  className={`highlight-box ${
+                    index % 2 !== 0 ? "reverse" : ""
+                  }`}
                   key={index}
                 >
                   <LazyVideo className="service-video" src={service.video} />
-                  <h2>{service.title}</h2>
-                  <ul className="service-description">
-                    {service.description.map((point, i) => (
-                      <li key={i}>{point}</li>
-                    ))}
-                  </ul>
-                  <div className="contact-button-wrapper">
-                    <HashLink smooth to="/services" className="nav-link">
-                      Other Services
-                    </HashLink>
+                  <div>
+                    <h2>{service.title}</h2>
+                    <ul className="service-description">
+                      {service.description.map((point, i) => (
+                        <li key={i}>{point}</li>
+                      ))}
+                    </ul>
+                    <div className="contact-button-wrapper">
+                      <HashLink
+                        smooth
+                        to="/services"
+                        onClick={scrollToTop}
+                        className="nav-link"
+                      >
+                        Other Services
+                      </HashLink>
+                    </div>
                   </div>
                 </div>
               ))}

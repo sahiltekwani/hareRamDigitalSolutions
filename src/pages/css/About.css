@@ -120,7 +120,6 @@
     align-items: center;
     text-align: center;
   }
-
   .step .step.reverse img {
     width: 100%;
     height: auto;
@@ -164,6 +163,13 @@
   position: relative;
 }
 
+.cta-container {
+  align-self: flex-end;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  justify-content: center;
+}
+
 
 @media (max-width: 768px) {
   .step {
@@ -188,7 +194,10 @@
 .about-main{
   flex-direction: column;
 }
-
+.cta-container{
+  max-height: 50px;
+    align-self:center;
+}
 }
 
 

@@ -6,9 +6,11 @@
   --accent-color: #007bff;
   --shadow-color: rgba(0, 0, 0, 0.05);
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -40,6 +42,7 @@ body {
   object-fit: contain;
   transition: transform 0.3s ease;
 }
+
 .logo:hover {
   transform: scale(1.1);
 }
@@ -64,6 +67,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .header-navigation li {
   display: flex;
   align-items: center;
@@ -79,7 +83,7 @@ body {
   height: 60px;
   padding: 0.5rem;
 }
- 
+
 .header-navigation li a {
   display: flex;
   align-items: center;
@@ -90,6 +94,7 @@ body {
   height: 100%;
   width: 100%;
 }
+
 .header-navigation li a::after {
   content: '';
   position: absolute;
@@ -101,9 +106,11 @@ body {
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
+
 .header-navigation li a:hover::after {
   transform: scaleX(1);
 }
+
 .header-navigation li:hover {
   transform: translateY(-2px);
   color: var(--accent-color);
@@ -136,6 +143,7 @@ body {
   width: 50%;
   padding: 2rem;
 }
+
 /* === Contact Form === */
 
 /* === Animation === */
@@ -144,6 +152,7 @@ body {
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -171,10 +180,11 @@ body {
     margin-right: 2rem;
     padding: 0.25rem;
   }
-.header-navigation li{
-    margin: 1rem;
+
+  .header-navigation li {
     background-color: black;
-}
+    width: 100%;
+  }
 
   .header-navigation.show {
     display: flex;
@@ -194,15 +204,12 @@ body {
   }
 
 
-  .logo-container {
-    padding-left: 0;
+  body {
+    transition: none;
   }
 
-  .logo {
-    height: 50px;
-  }
-  .App-header{
-      backdrop-filter: blur(1000px);
+  .App-header {
+    backdrop-filter: blur(1000px);
   }
 }
 
@@ -210,6 +217,6 @@ body {
 .header-navigation .active-link {
   transform: translateY(-2px);
   color: var(--accent-color);
-    text-decoration: underline;
+  text-decoration: underline;
 
 }

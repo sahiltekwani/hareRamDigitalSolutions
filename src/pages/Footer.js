@@ -4,11 +4,14 @@ import "./css/Footer.css";
 import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <footer className="site-footer">
       <div className="footer-content">
         <div className="footer-section about">
-          <h3>Hare Ram Digital Solutions</h3>
+          <h3>Hare Ram InfoTech</h3>
           <p>Innovating digital experiences to grow your business.</p>
         </div>
 
@@ -16,16 +19,19 @@ const Footer = () => {
           <h4>Quick Links</h4>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={scrollToTop}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/services">Services</Link>
+              <Link to="/services" onClick={scrollToTop}>
+                Services
+              </Link>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li>
-              <Link to="/about">About Us</Link>
+              <Link to="/about" onClick={scrollToTop}>
+                About Us
+              </Link>
             </li>
             <li>
               <HashLink smooth to="/#contact">
@@ -69,7 +75,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <p className="trademark">
-          &copy; {new Date().getFullYear()} Hare Ram Digital Solutions. All
+          &copy; {new Date().getFullYear()} Hare Ram InfoTech. All
           rights reserved.
         </p>
       </div>

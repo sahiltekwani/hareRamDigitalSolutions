@@ -109,8 +109,8 @@
   .service-card {
     flex-direction: column;
     text-align: center;
-      background: #ffffff20;
-
+    background: #ffffff20;
+    transition: none;
   }
 
   .service-card.reverse {
@@ -126,11 +126,6 @@
     height: 200px;
     margin-bottom: 1rem;
   }
-}
-.cta-container {
-  align-self: flex-end;
-  margin-top: 1rem;
-  padding-top: 1rem;
 }
 .service-contact{
   height: 100%;
