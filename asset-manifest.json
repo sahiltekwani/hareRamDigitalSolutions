@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/hareRamDigitalSolutions/static/css/main.cd7b448a.css",
+    "main.css": "/hareRamDigitalSolutions/static/css/main.8d90b171.css",
     "main.js": "/hareRamDigitalSolutions/static/js/main.efe8b924.js",
     "static/js/453.20e198ad.chunk.js": "/hareRamDigitalSolutions/static/js/453.20e198ad.chunk.js",
     "static/media/ai.mp4": "/hareRamDigitalSolutions/static/media/ai.0e5a9636da92cf20b3c4.mp4",
@@ -15,12 +15,12 @@
     "static/media/quatation.jpg": "/hareRamDigitalSolutions/static/media/quatation.1abf63119dcb7d5aaafb.jpg",
     "static/media/logo.jpg": "/hareRamDigitalSolutions/static/media/logo.57b45bf97694c4c2bb3b.jpg",
     "index.html": "/hareRamDigitalSolutions/index.html",
-    "main.cd7b448a.css.map": "/hareRamDigitalSolutions/static/css/main.cd7b448a.css.map",
+    "main.8d90b171.css.map": "/hareRamDigitalSolutions/static/css/main.8d90b171.css.map",
     "main.efe8b924.js.map": "/hareRamDigitalSolutions/static/js/main.efe8b924.js.map",
     "453.20e198ad.chunk.js.map": "/hareRamDigitalSolutions/static/js/453.20e198ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd7b448a.css",
+    "static/css/main.8d90b171.css",
     "static/js/main.efe8b924.js"
   ]
 }
