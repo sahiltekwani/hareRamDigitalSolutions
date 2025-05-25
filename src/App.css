@@ -124,7 +124,6 @@ body {
   position: relative;
   z-index: 1;
   background: rgba(255, 255, 255, 0.7);
-  padding-top: 80px;
   width: 100%;
 }
 
@@ -175,12 +174,9 @@ body {
   .menu-toggle {
     display: block;
     padding: 1rem;
-    font-size: 3rem;
     background-color: rgba(255, 255, 255, 0.2);
+    height: 70px;
   }
-.content-overlay {
-  padding-top: 10px;
-}
   .header-navigation {
     display: none;
     flex-direction: column;
