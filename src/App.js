@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import Footer from "./pages/Footer";
-import logo from "./media/logo.png";
+import logo from "./media/logo.jpg";
 import "./App.css";
 import bgVideo from "./media/tech-bg.mp4";
 import { HashLink } from "react-router-hash-link";
@@ -64,7 +64,7 @@ function App() {
             </NavLink>
           </div>
 
-          <button className="menu-toggle" onClick={toggleMenu}>
+          <button className="menu-toggle" tabIndex="0" onClick={toggleMenu}>
             &#9776;
           </button>
 

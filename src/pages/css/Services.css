@@ -112,6 +112,9 @@
     background: #ffffff20;
     transition: none;
   }
+  .services-container {
+  padding-top: 10px;
+}
 
   .service-card.reverse {
     flex-direction: column;

@@ -13,6 +13,8 @@ const Footer = () => {
         <div className="footer-section about">
           <h3>Hare Ram InfoTech</h3>
           <p>Innovating digital experiences to grow your business.</p>
+          <p>Specialized in web & mobile app development.</p>
+          <p>Committed to quality, security & scalability.</p>
         </div>
 
         <div className="footer-section links">
@@ -75,8 +77,8 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <p className="trademark">
-          &copy; {new Date().getFullYear()} Hare Ram InfoTech. All
-          rights reserved.
+          &copy; {new Date().getFullYear()} Hare Ram InfoTech. All rights
+          reserved.
         </p>
       </div>
     </footer>
