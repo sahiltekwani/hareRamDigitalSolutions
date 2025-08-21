@@ -1,8 +1,8 @@
 .contact-form-container {
   max-width: 600px;
   margin: 0 auto;
-  padding: 3rem;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  padding: 4rem;
+  background: #ffffff20;
   color: white;
   border-radius: 5%;
   box-shadow: 0 2px 15px var(--shadow-color);
@@ -10,7 +10,7 @@
  .contact-form {
     display: flex;
     flex-direction: column;
-      gap: 1rem;
+    gap: 1rem;
   }
    .contact-form input,
   .contact-form textarea {
